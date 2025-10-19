@@ -5,6 +5,7 @@ from typing import List, Dict, Any, Optional
 import numpy as np
 from PIL import Image, ImageFilter
 import cv2
+import io
 import tensorflow as tf
 from tensorflow.keras.applications import EfficientNetB4
 from tensorflow.keras.models import Model
