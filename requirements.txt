@@ -1,0 +1,16 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+pillow==10.1.0
+numpy==1.24.3
+tensorflow==2.13.0
+opencv-python==4.8.1.78
+redis==5.0.1
+celery==5.3.4
+python-jose==3.3.0
+passlib==1.7.4
+python-memcached==1.59
+aiofiles==23.2.1
+python-magic==0.4.27
+asyncio-throttle==1.0.2
+prometheus-client==0.17.1
