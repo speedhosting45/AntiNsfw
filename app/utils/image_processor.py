@@ -16,8 +16,8 @@ async def validate_image(file: UploadFile):
             detail="File too large"
         )
 
-    # ✅ Correct: use magic.from_buffer(), not python_magic
-   mime = magic.from_buffer(content, mime=True)
+    # Check file type
+    mime = magic.from_buffer(content, mime=True)
     if not mime.startswith("image/"):
         raise HTTPException(
             status_code=400,
