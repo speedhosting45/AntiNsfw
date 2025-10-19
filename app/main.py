@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 import aiofiles
-import python_magic
+import magic
 
 from .core.config import settings
 from .models.schemas import (
