@@ -17,7 +17,7 @@ async def validate_image(file: UploadFile):
         )
 
     # ✅ Correct: use magic.from_buffer(), not python_magic
-    mime = magic.from_buffer(content, mime=True)
+   mime = magic.from_buffer(content, mime=True)
     if not mime.startswith("image/"):
         raise HTTPException(
             status_code=400,
