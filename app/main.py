@@ -32,7 +32,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-a
 # Mount static files
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
