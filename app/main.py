@@ -32,7 +32,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+a
 # Mount static files
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
@@ -61,6 +61,7 @@ async def read_root():
 @app.post(f"{settings.API_V1_STR}/scan", response_model=ScanResponse)
 @limiter.limit(f"{settings.RATE_LIMIT_PER_MINUTE}/minute")
 async def scan_image(
+    request: Request,                                # 👈 Add this line
     background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     return_heatmap: bool = False,
