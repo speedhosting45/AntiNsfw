@@ -1,7 +1,7 @@
 import hashlib
 import io
 from fastapi import HTTPException, UploadFile
-import python_magic
+import magic
 from PIL import Image
 from ..core.config import settings
 
